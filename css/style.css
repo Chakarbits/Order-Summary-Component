@@ -67,3 +67,12 @@ figure {
   line-height: 1.819rem;
   margin-bottom: var(--fs-normal);
 }
+
+.order-summary-component__description {
+  width: 16.438rem;
+  margin: 0 auto;
+  color: var(--color-desaturated-blue);
+  line-height: 1.563rem;
+  font-weight: 400;
+  font-size: 0.938rem;
+}
