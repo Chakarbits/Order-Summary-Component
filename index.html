@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <!-- Ensures proper display across different device screen sizes -->
 
     <link
       rel="icon"
@@ -11,30 +11,33 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Adds a favicon to the page -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preconnects to Google Fonts for performance optimization -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Links to a custom Google Font: Red Hat Display -->
+
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Links the external stylesheet for custom styles -->
 
     <title>Frontend Mentor | Order summary card</title>
+    <!-- Page title as displayed on the browser tab -->
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <style></style>
+    <!-- Placeholder for potential inline styles (optional) -->
   </head>
+
   <body>
     <main>
+      <!-- Main content container -->
       <article class="order-summary-component">
+        <!-- Component for the order summary card -->
         <figure>
           <img
             src="./images/illustration-hero.svg"
@@ -42,18 +45,29 @@
             class="order-summary-component__illustration-image"
           />
         </figure>
+        <!-- Displays the order illustration image -->
+
+        <!-- Primary heading of the order summary -->
         <h1 class="order-summary-component__heading">Order Summary</h1>
+
+        <!-- Descriptive paragraph for the service/product being offered -->
         <p class="order-summary-component__description">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
+
+        <!-- Container for billing details (plan, price, etc.) -->
         <div class="order-summary-component__billing-cycle">
-          <div class="testing">
+          <!-- Wrapper for icon and text details -->
+          <div class="flex-wrapper">
             <img
               src="./images/icon-music.svg"
               alt="Music icon"
               class="order-summary-component__music-icon"
             />
+            <!-- Icon representing the product/service -->
+
+            <!-- Wrapper for plan and pricing details -->
             <div class="order-summary__secondary-component">
               <h2 class="order-summary-component__price-heading">
                 Annual Plan
@@ -61,19 +75,25 @@
               <p class="order-summary-component__price">$59.99/year</p>
             </div>
           </div>
-
-          <a href="#" class="">Change</a>
+          <!-- Link to allow the user to change their plan, with aria-label for accessibility -->
+          <a href="#" aria-label="change annual plan">Change</a>
         </div>
+
+        <!-- Primary button for proceeding with the payment process -->
         <button class="btn btn--primary">Proceed to Payment</button>
+
+        <!-- Secondary button to cancel the order -->
         <button class="btn btn--secondary">Cancel Order</button>
       </article>
     </main>
 
     <div class="attribution">
+      <!-- Attribution footer for the coding challenge -->
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
+      <!-- Links to the coding challenge and the developer's portfolio (replace "Your Name Here") -->
     </div>
   </body>
 </html>

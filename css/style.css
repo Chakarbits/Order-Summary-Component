@@ -111,7 +111,7 @@ body {
 }
 
 figure {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .order-summary-component {
@@ -166,7 +166,7 @@ figure {
   font-weight: var(--fw-black);
 }
 
-.testing {
+.flex-wrapper {
   display: flex;
   gap: 1.25rem;
 }
@@ -187,6 +187,11 @@ figure {
   color: var(--color-bright-blue);
 }
 
+.order-summary-component__billing-cycle a:hover {
+  text-decoration: none;
+  color: hsla(245, 83%, 68%, 1);
+}
+
 .btn {
   display: block;
   width: 17.438rem;
@@ -194,6 +199,7 @@ figure {
   font-size: 0.938rem;
   font-weight: var(--fw-black);
   border: none;
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -203,9 +209,26 @@ figure {
   border-radius: 0.6875rem;
   background: var(--color-bright-blue);
   box-shadow: 0 1.25rem 1.25rem 0 rgba(56, 42, 225, 0.19);
+
+  &:hover {
+    background: hsla(245, 83%, 68%, 1);
+  }
 }
 
 .btn--secondary {
   background: none;
   color: hsla(224, 23%, 55%, 1);
+
+  &:hover {
+    color: hsla(223, 47%, 23%, 1);
+  }
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
