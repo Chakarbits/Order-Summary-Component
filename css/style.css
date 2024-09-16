@@ -191,6 +191,9 @@ figure {
   display: block;
   width: 17.438rem;
   margin: 0 auto 1.5rem auto;
+  font-size: 0.938rem;
+  font-weight: var(--fw-black);
+  border: none;
 }
 
 .btn--primary {
@@ -198,9 +201,11 @@ figure {
   padding-bottom: 0.938rem;
   color: hsla(0, 0%, 100%, 1);
   border-radius: 0.6875rem;
-  border: none;
   background: var(--color-bright-blue);
-  font-weight: var(--fw-black);
-  font-size: 0.938rem;
   box-shadow: 0 1.25rem 1.25rem 0 rgba(56, 42, 225, 0.19);
+}
+
+.btn--secondary {
+  background: none;
+  color: hsla(224, 23%, 55%, 1);
 }
