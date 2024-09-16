@@ -119,6 +119,7 @@ figure {
   border-radius: 1.25rem;
   background: #fff;
   text-align: center;
+  overflow: hidden;
 }
 
 .order-summary-component__illustration-image {
@@ -184,4 +185,22 @@ figure {
   font-size: 0.813rem;
   font-weight: var(--fw-bold);
   color: var(--color-bright-blue);
+}
+
+.btn {
+  display: block;
+  width: 17.438rem;
+  margin: 0 auto 1.5rem auto;
+}
+
+.btn--primary {
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  color: hsla(0, 0%, 100%, 1);
+  border-radius: 0.6875rem;
+  border: none;
+  background: var(--color-bright-blue);
+  font-weight: var(--fw-black);
+  font-size: 0.938rem;
+  box-shadow: 0 1.25rem 1.25rem 0 rgba(56, 42, 225, 0.19);
 }
